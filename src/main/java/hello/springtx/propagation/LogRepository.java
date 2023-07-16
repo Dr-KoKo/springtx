@@ -14,7 +14,7 @@ import java.util.Optional;
 public class LogRepository {
     private final EntityManager em;
 
-    @Transactional
+//    @Transactional
     public void save(Log logMessage) {
         em.persist(logMessage);
         if (logMessage.getMessage().contains("로그예외")) {
