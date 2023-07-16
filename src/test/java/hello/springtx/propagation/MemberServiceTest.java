@@ -59,7 +59,7 @@ class MemberServiceTest {
     @Test
     void singleTx() {
         //given
-        String username = "outerTxOff_success";
+        String username = "singleTx_success";
         //when
         memberService.joinV1(username);
         //then: 모든 데이터가 정상 저장된다.
